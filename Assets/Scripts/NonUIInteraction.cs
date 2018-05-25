@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class NonUIInteraction : MonoBehaviour {
     // TODO: Delete outText
@@ -41,8 +42,13 @@ public class NonUIInteraction : MonoBehaviour {
 		if (OVRInput.GetDown (OVRInput.Button.PrimaryIndexTrigger) && t.name != "Ground") {
 			locked = true;
 			Debug.Log ("VR: select GetDown + locked value " + locked);
-			if (t.name == "Cube") {
+			if (t.name == "PlanimetryCube") {
 				cameraSwitcher.SwitchCamera ();
+				locked = false;
+			}
+			if (t.name == "BackMenuCube") {
+				Debug.Log ("VR: Clicked on left option");
+				SceneManager.LoadScene ("menu");
 				locked = false;
 			}
 			//t.transform = new Vector3 ();

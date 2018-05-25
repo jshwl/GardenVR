@@ -37,7 +37,7 @@ public class OVRGearVrController : MonoBehaviour
 	/// </summary>
     public OVRInput.Controller m_controller;
 
-    private bool m_prevControllerConnected = false;
+	private bool m_prevControllerConnected = true;
     private bool m_prevControllerConnectedCached = false;
 
     void Update()

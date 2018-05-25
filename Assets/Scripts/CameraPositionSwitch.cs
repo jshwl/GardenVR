@@ -133,7 +133,7 @@ public class CameraPositionSwitch : MonoBehaviour {
 	}
 	public void Translate(){
 		Vector3 move = Vector3.zero;
-		move += centralAnchor.transform.forward;
+		move += new Vector3(centralAnchor.transform.forward.x, 0,centralAnchor.transform.forward.z);
 		move = move.normalized * Time.deltaTime * speed;
 		camera.transform.Translate (move, Space.World);
 	}
