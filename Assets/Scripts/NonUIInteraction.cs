@@ -53,7 +53,7 @@ public class NonUIInteraction : MonoBehaviour {
 			}
 			//t.transform = new Vector3 ();
 			//t.transform = new Vector3(,t.transform.y,)		
-		} else if (OVRInput.GetDown (OVRInput.Button.PrimaryTouchpad) && t.name != "Ground") {
+		} else if (OVRInput.GetDown (OVRInput.Button.PrimaryTouchpad) && t.name != "Ground" && t.tag != "control") {
 			
 			Debug.Log ("VR: Dpad clicked > try to destroy " + t.name + " <parent is> " + t.gameObject);
 			Destroy (t.gameObject);

@@ -221,7 +221,7 @@ bed4f85fb03931cf0a632bf48e95aea8 Assembly-CSharp.dll:VRStandardAssets.ShootingGa
 08f94d842397081586723cddbdc827aa Assembly-CSharp.dll:.InstantiatorCode
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 7e926316ce20e4d45cb9a9aebc6e79e9 Assembly-CSharp.dll:.OVRGridCube
-755b51582d06796b3a87c9b0119c1581 Assembly-CSharp.dll:.UIInteraction
+7257adb1bbf8ac558aac197d9cd368d2 Assembly-CSharp.dll:.UIInteraction
 db6d272e82246ee6936be0f533c29f79 Assembly-CSharp.dll:VRStandardAssets.Examples.ExampleInteractiveItem
 e10d6333eb47c25ac5148881a88d72a6 Assembly-CSharp.dll:VRStandardAssets.Flyer.Asteroid
 15e45e4865f4dbd0e16e1cda7692bea0 Assembly-CSharp.dll:VRStandardAssets.Flyer.FlyerHealthController

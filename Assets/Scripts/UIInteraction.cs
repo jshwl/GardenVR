@@ -21,18 +21,21 @@ limitations under the License.
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class UIInteraction : MonoBehaviour {
     public UnityEngine.UI.Text outText;
+	public InstantiatorCode inst;
+	public string buttonName;
 	  
 
 	public void OnButtonClicked() {
-		Debug.Log ("VR: BUtton clicked");
         if (outText != null) {
             outText.text = "<b>Last Interaction:</b>\nUI Button clicked";
         }
-		SceneManager.LoadScene ("2rolex_garden");
-		Debug.Log ("VR: Opening rolex scene by clicking button");
+		buttonName = EventSystem.current.currentSelectedGameObject.name;
+		inst.Instant (buttonName);
+		Debug.Log ("VR: BUtton clicked " + buttonName);
     }
 
     public void OnSliderChanged(float value) {
@@ -54,6 +57,5 @@ public class UIInteraction : MonoBehaviour {
 	}
 
     public void OnBackToMenu() {
-        SceneManager.LoadScene("main", LoadSceneMode.Single);
     }
 }

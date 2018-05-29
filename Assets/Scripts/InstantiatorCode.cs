@@ -54,6 +54,7 @@ public class InstantiatorCode : MonoBehaviour {
 		//  TEST WITH DICTIONARY
 		lastInstantiated = Instantiate(inventory[x], new Vector3(-i, 0, 2), Quaternion.identity);
 		lastInstantiated.AddComponent<BoxCollider> ();
+		Debug.Log ("VR: instantiated '" + lastInstantiated.transform.position + "'");
 
 		//Debug.Log ("Action: Button clicked " + inventory [name]);
 	}
