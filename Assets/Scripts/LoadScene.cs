@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LoadScene : MonoBehaviour {
-
+	// This is a test script, eventually remove it
 	void Update(){
 		if (Input.GetKeyDown ("space")) {
 			LoadRolex ();
@@ -17,10 +17,10 @@ public class LoadScene : MonoBehaviour {
 	}
 	public void LoadFreeGarden() {
 		Debug.Log ("VR: LoadRolex triggered");
-		SceneManager.LoadScene ("freegarden");
+		SceneManager.LoadScene ("plain");
 	}
 	public void onClickLeft() {
 		Debug.Log ("VR: Clicked on left option");
-		SceneManager.LoadScene ("menu");
+		//SceneManager.LoadScene ("menu");
 	}
 }

@@ -30,7 +30,7 @@ public class RawInteraction : MonoBehaviour {
     public UnityEngine.UI.Text outText;
 
     public void OnHoverEnter(Transform t) {
-		Debug.Log ("vre entered object " + t.name);
+		Debug.Log ("VR: entered object " + t.name);
         if (t.gameObject.name == "BackButton") {
             t.gameObject.GetComponent<Renderer>().material = backACtive;
         }
@@ -60,7 +60,7 @@ public class RawInteraction : MonoBehaviour {
 			SceneManager.LoadScene("rolex", LoadSceneMode.Single);
         }
 		if (t.gameObject.name == "right") {
-			SceneManager.LoadScene("freegarden", LoadSceneMode.Single);
+			SceneManager.LoadScene("plain", LoadSceneMode.Single);
 		}
 		if (t.gameObject.name == "left") {
 			Debug.Log("Clicked on Coming Soon");
